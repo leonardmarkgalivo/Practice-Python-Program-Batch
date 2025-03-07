@@ -1,9 +1,8 @@
-first_num = int(input("Enter number 1: ")) 
+num1 = int(input("Enter first number: "))  
+result = num1 
 
-result = first_num  
-
-for i in range(2, 11):  
-    num = int(input(f"Enter number {i}: "))
+for i in range(9):  
+    num = int(input("Enter next number: "))  
     result -= num  
 
-print(f"Result: {result}")  
+print("Result:", result)  
