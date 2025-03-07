@@ -1,8 +1,8 @@
-try:
-    numbers = [int(input(f"Enter number {i + 1}: ")) for i in range(10)]
+even_count = 0
 
-    even_count = sum(1 for num in numbers if num % 2 == 0)
-    print("Count of even numbers:", even_count)
+for i in range(10):
+    num = int(input(f"Enter number {i+1}: "))
+    if num % 2 == 0:
+        even_count += 1
 
-except ValueError:
-    print("Please enter valid integers.")
+print(f"Total even numbers: {even_count}") 
