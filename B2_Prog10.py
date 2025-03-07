@@ -1,14 +1,13 @@
 try:
-    num1 = int(input("Enter first number: "))
-    num2 = int(input("Enter second number: "))
+    num1 = int(input("First number: "))
+    num2 = int(input("Second number: "))
 
-    if num1 > num2:
-        num1, num2 = num2, num1
+    start = min(num1, num2)
+    end = max(num1, num2)
 
-    for num in range(num1 + 1, num2):
-        print(num, end=" ")
-
-    print()
+    for num in range(start + 1, end):
+        print(num, end=" ")  
 
 except ValueError:
     print("Please enter valid integers.")
+
