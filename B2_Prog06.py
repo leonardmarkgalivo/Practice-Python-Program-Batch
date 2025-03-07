@@ -1,8 +1,9 @@
-try:
-    numbers = [int(input(f"Enter number {i + 1}: ")) for i in range(10)]
+first_num = int(input("Enter number 1: ")) 
 
-    result = numbers[0] - sum(numbers[1:])
-    print("Result:", result)
+result = first_num  
 
-except ValueError:
-    print("Please enter valid integers.")
+for i in range(2, 11):  
+    num = int(input(f"Enter number {i}: "))
+    result -= num  
+
+print(f"Result: {result}")  
